@@ -1,0 +1,5 @@
+import cv2
+pic=cv2.imread("E:\Desi\WhatsApp Image 2023-08-15 at 20.28.41.jpeg")
+cv2.imshow("PICTURE",pic)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
