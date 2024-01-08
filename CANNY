@@ -1,0 +1,8 @@
+import cv2
+import numpy as np
+img=cv2.imread("D:\windows c\Pictures\Camera Roll\Desi.png")
+can=cv2.Canny(img,100,200)
+cv2.imshow("ORIGINAL",img)
+cv2.imshow("canny",can)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
