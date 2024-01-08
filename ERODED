@@ -1,0 +1,8 @@
+import cv2
+import numpy as np
+img=cv2.imread("D:\windows c\Pictures\Camera Roll\Desi.png")
+kernel=np.ones((2,2),np.uint8)
+er=cv2.erode(img,kernel,iterations=1)
+cv2.imshow("ERODED",er)
+cv2.imshow("ORIGINAL",img)
+cv2.waitKey(0)
