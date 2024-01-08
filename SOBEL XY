@@ -1,0 +1,8 @@
+import cv2
+import numpy as np
+img=cv2.imread("D:\windows c\Pictures\Camera Roll\Desi.png")
+sobx=cv2.Sobel(img,cv2.CV_64F,1,0,ksize=3)
+soby=cv2.Sobel(img,cv2.CV_64F,0,1,ksize=3)
+sob=cv2.addWeighted(sobx,0.5,soby,0.5,0)
+cv2.imshow("COMBINED",sob)
+cv2.waitKey(0)
