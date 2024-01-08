@@ -1,0 +1,7 @@
+import cv2
+import numpy as np
+img=cv2.imread("D:\windows c\Pictures\Camera Roll\Desi.png")
+sob=cv2.Sobel(img,cv2.CV_64F,1,0,ksize=3)
+sob=np.abs(sob)
+cv2.imshow("SOBEL",sob)
+cv2.waitKey(0)
