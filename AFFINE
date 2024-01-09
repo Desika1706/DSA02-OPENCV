@@ -1,0 +1,7 @@
+import cv2
+import numpy as np
+img=cv2.imread("D:\windows c\Pictures\Camera Roll\Desi.png")
+m=np.float32([[0.5,0.5,50],[0.5,-0.5,50]])
+aff=cv2.warpAffine(img,m,(img.shape[1],img.shape[0]))
+cv2.imshow("AFFINE",aff)
+cv2.waitKey(0)
