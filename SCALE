@@ -1,0 +1,11 @@
+import cv2
+img=cv2.imread("D:\windows c\Pictures\Camera Roll\Desi.png")
+ht,wt=img.shape[:2]
+scale=1.5
+big=cv2.resize(img,(int(wt*scale),int(ht*scale)))
+scale=0.5
+small=cv2.resize(img,(int(wt*scale),int(ht*scale)))
+cv2.imshow("BIGGER",big)
+cv2.imshow("SMALLER",small)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
